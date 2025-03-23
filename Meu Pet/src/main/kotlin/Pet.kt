@@ -6,19 +6,19 @@ class Pet {
         private set // O nome só pode ser alterado internamente
 
     var fome: Int = 6
-        get() = field.coerceIn(0, 9) // Garante que fome esteja entre 0 e 9
+        get() = field.coerceIn(0, 10) // Garante que fome esteja entre 0 e 10
 
     var felicidade: Int = 8
-        get() = field.coerceIn(1, 10) // Garante que felicidade esteja entre 1 e 10
+        get() = field.coerceIn(0, 10) // Garante que felicidade esteja entre 0 e 10
 
     var cansaco: Int = 0
-        get() = field.coerceIn(0, 9) // Garante que cansaco esteja entre 0 e 9
+        get() = field.coerceIn(0, 10) // Garante que cansaco esteja entre 0 e 10
 
     var vontadeDeIrAoBanheiro: Boolean = false
         private set // Só pode ser alterado internamente
 
     var sujeira: Int = 5
-        get() = field.coerceIn(0, 9) // Garante que sujeira esteja entre 0 e 9
+        get() = field.coerceIn(0, 10) // Garante que sujeira esteja entre 0 e 9
 
     var tempoEmSegundos: Int = 1000
         private set // Só pode ser alterado internamente
@@ -85,7 +85,7 @@ class Pet {
             println("Você perdeu")
             return
         }
-
+        brincarComPet()
         incrementarIdade()
         verificarStatus()
     }
