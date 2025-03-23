@@ -1,0 +1,45 @@
+idade = 5
+nome = keyle
+fome = 6
+felicidade = 8
+cansaso = 0
+vontadeBanheiro = false
+nível de sujeira = 5
+
+se(cansaso = 10 ou fome = 10 ou feliicidade = 0){
+	mostre voce perdeu
+	reinicie
+}
+
+alimentar
+a cada 7 vez
+vontadeBanheiro = true
+fome --
+
+
+brincar
+felicidade++
+cansaso ++
+a cada 4 vez
+sujeira ++
+
+descansar
+a cada 1 minuto
+cansaso --
+
+verificarStatus
+mostra fome, felicidade e idade
+
+a cada 1 minuto
+fome ++
+
+a cada 1 minutos
+felicidade --
+
+a cada 1 minutos
+idade ++
+
+informar descanso
+mostre o tempo total para o descaso é cansaso * 1 minuto
+
+
